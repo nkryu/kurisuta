@@ -1,0 +1,267 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Roboto,Hiragino Kaku Gothic ProN,sans-serif;
+}
+a{
+  text-decoration: none;
+}
+img{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.noscroll{
+  overflow: hidden;
+}
+
+/* header */
+header{
+  width: 100%;
+  height: 74px;
+  background: #1B1310;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #eee;
+  border-bottom: 1px solid #eee;
+}
+.header-title{
+  font-size:26px ;
+}
+.nav-list{
+  display: flex;
+}
+.nav-item{
+  margin-right: 55px;
+}
+.nav-item:last-child{
+  margin: 0;
+}
+.nav-item a{
+  font-size: 16px;
+  color: #eee;
+}
+
+.menu-btn{
+  display: none;
+}
+/* header */
+
+/* .fv */
+.fv{
+  height:90vh;
+  background: url(img/fv-bgi@2x.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-copy{
+  color: #eee;
+  font-size: 50px;
+  padding: 35px 42px;
+  border: 1px solid #eee;
+}
+/* .fv */
+
+/* section共通 */
+.section-wrapper{
+  padding: 100px 15% 50px;
+
+}
+.section-title{
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 70px;
+}
+.section-sub-title{
+  font-size: 24px;
+  margin-bottom: 45px;
+}
+.section-text{
+  font-size: 14px;
+  font-weight: bold;
+}
+/* section共通 */
+
+/* Service */
+.content-img,.service-text{
+  max-width: 480px;
+}
+.content-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.reverse{
+  flex-direction: row-reverse;
+  margin-bottom: 50px;
+}
+.content-img{
+  max-width: 480px;
+  
+}
+/* Service */
+/* News */
+.card-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.card-item{
+  max-width:320px;
+  box-shadow: 0 0 6px #1B1310;
+}
+.card-item p{
+  padding: 25px 33px;
+  color: #000;
+} 
+/* News */
+/* contact */
+.form{
+  max-width: 700px;
+  margin: 0 auto;
+}
+input,textarea{
+  width: 100%;
+  resize: none;
+  border: 1px solid #1B1310;
+}
+input{
+  height: 30px;
+}
+textarea{
+  height: 171px;
+}
+.form-part{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.form-send{
+  width: 235px;
+  height: 59px;
+  display: block;
+  margin: 50px auto 0;
+  color: #eee;
+  background: #1B1310;
+  box-shadow: 0 0 6px #1B1310;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 20px 97px;
+  line-height: 1;
+}
+
+@media(max-width:768px){
+  .section-sub-title{
+    font-size: 20px;
+  }
+  header{
+    padding: 0 5%;
+  }
+
+  .nav-wrapper{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+  .header-nav{
+    width: 100%;
+    height: 100%;
+    background: #1B1310;
+    z-index: 2;
+  }
+  .nav-list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    flex-direction: column;
+  }
+  .nav-item{
+    margin: 0 0 50px 0;
+    text-align: center;
+  }
+  .menu-btn{
+    display: block;
+    position: relative;
+    width: 39px;
+    height: 39px;
+    border: none;
+    z-index: 3;
+    background: transparent;
+  }
+  .bar{
+    width: 20px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    background: #eee;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .bar-top{
+    top: 10px;
+  }
+  .bar-mid{
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .bar-bottom{
+    bottom: 10px;
+  }
+  .close .bar-top{
+    transform:translate(-50%,9px) rotate(405deg);
+    transition: all .5s;
+  }
+  .close .bar-mid{
+    transform:translateX(-100px) rotate(1000deg);
+    opacity: 0;
+    transition: all .5s;
+  }
+  .close .bar-bottom{
+    transform:translate(-50%,-9px) rotate(-405deg);
+    transition: all .5s;
+  }
+
+  .main-copy{
+    font-size: 30px;
+    padding: 30px 40px;
+  }
+  .content-inner{
+    flex-direction: column;
+  }
+  .reverse{
+    margin-bottom: 50px;
+  }
+  .service-text{
+    margin-bottom: 40px;
+  }
+  .card-list{
+    flex-direction: column;
+  }
+  .card-item{
+    margin-bottom: 50px;
+  }
+  .card-item:last-child{
+    margin: 0;
+  }
+}
+
+@media(max-width:428px){
+  .fv{
+    background-image: url(img/fv-bgi_sp@2x.jpg);
+  }
+}

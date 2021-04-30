@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="jn">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>jQuery</title>
+</head>
+<body>
+
+  <header>
+    <h1 class="header-title">クリ★スタ</h1>
+    <div class="nav-wrapper">
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#service">Service</a></li>
+          <li class="nav-item"><a href="#news">News</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <button class="menu-btn">
+      <span class="bar bar-top"></span>
+      <span class="bar bar-mid"></span>
+      <span class="bar bar-bottom"></span>
+    </button>
+  </header>
+  <div class="fv">
+    <p class="main-copy">
+      Cresta Design.
+    </p>
+  </div>
+  <main>
+    <section class="section-wrapper">
+      <h2 class="section-title" id="about">About</h2>
+      <div class="about-text">
+        <h3 class="section-sub-title">ミニマルで<br>洗礼されたデザインを。</h3>
+        <p class="section-text">
+          近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。
+        </p>
+      </div>
+    </section>
+    <section class="section-wrapper">
+      <h2 class="section-title" id="service">Service</h2>
+      <div class="content-inner reverse">
+        <div class="service-text">
+          <h3 class="section-sub-title">リリース時のサポートで<br>サービスのブランディングを</h3>
+          <p class="section-text">弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。</p>
+        </div>
+        <div class="content-img">
+          <img src="img/service-image@2x.jpg" alt="">
+        </div>
+      </div>
+      <div class="content-inner">
+        <div class="service-text">
+          <h3 class="section-sub-title">リリース時のサポートで<br>効果を最大化させる</h3>
+          <p class="section-text">弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。</p>
+              
+        </div>
+        <div class="content-img">
+          <img src="img/service-image02@2x.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="section-wrapper">
+      <h2 class="section-title" id="news">
+        News
+      </h2>
+      <ul class="card-list">
+      
+        <li class="card-item">
+          <a href="">
+            <div class="card-img">
+              <img src="img/card-image1@2x.jpg" alt="">
+              <p class="section-text">
+                新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+              </p>
+            </div>
+          </a>
+        </li>
+        <li class="card-item">
+          <a href="">
+            <div class="card-img">
+              <img src="img/card-image2@2x.jpg" alt="">
+              <p class="section-text">
+                新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+              </p>
+            </div>
+          </a>
+        </li>
+        <li class="card-item">
+          <a href="">
+            <div class="card-img">
+              <img src="img/card-image3@2x.jpg" alt="">
+              <p class="section-text">
+                新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="section-wrapper">
+      <h2 class="section-title" id="contact">Contact</h2>
+      <form class="form">
+        <div class="form-part">
+          <label>
+            担当者名<input type="text">
+          </label>
+        </div>
+        <div class="form-part">
+          <label>
+            電話番号<input type="text">
+          </label>
+        </div>
+        <div class="form-part">
+          <label>
+            メールアドレス<input type="text">
+          </label>
+        </div>
+        <div class="form-part">
+          <label>
+            お問い合わせ内容<textarea></textarea>
+          </label>
+        </div>
+        <button class="form-send">
+          送信
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
